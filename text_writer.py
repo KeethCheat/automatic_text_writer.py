@@ -26,7 +26,7 @@ else:
     time.sleep(0.1)
     print(f'\nFinished writing: ' + str(x) + ', ' + str(y) + f' times. \n')
     print('tasks done, now sleeping in 60 seconds')
-    time.sleep(10)
+    time.sleep(60)
     print(f'Sleeping in{random.choice(executing_list)} ')
     for i in range(10, 0, -1):
         sys.stdout.write(str(i) + ' ')
