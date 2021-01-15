@@ -9,21 +9,27 @@ y = int(input("How many times should you write it?: "))
 executing_list = ['.', '..', '...']
 
 if x and y:
-    for i in range(random.randint(0, 20)):
-
-        sys.stdout.write('\rloading |')
-        time.sleep(0.1)
-
-        sys.stdout.write('\rloading /')
-        time.sleep(0.1)
-
-        sys.stdout.write('\rloading -')
-        time.sleep(0.1)
-
-        sys.stdout.write('\rloading \\')
-        time.sleep(0.1)
-
-    sys.stdout.write('\rDone!\n')
+  for i in range(random.randint(1, 20)):
+    sys.stdout.write('\rLoading| ■□□□□□□□□□')
+    time.sleep(0.1)
+    sys.stdout.write('\rLoading/ ■■□□□□□□□□')
+    time.sleep(0.1)
+    sys.stdout.write('\rLoading- ■■■□□□□□□□')
+    time.sleep(0.1)
+    sys.stdout.write('\rLoading| ■■■■□□□□□□')
+    time.sleep(0.1)
+    sys.stdout.write('\rLoading\\ ■■■■■□□□□□')
+    time.sleep(0.1)
+    sys.stdout.write('\rLoading- ■■■■■■□□□□')
+    time.sleep(0.1)
+    sys.stdout.write('\rLoading/ ■■■■■■■□□□ ')
+    time.sleep(0.1)
+    sys.stdout.write('\rLoading| ■■■■■■■■□□')
+    time.sleep(0.1)
+    sys.stdout.write('\rLoading\\ ■■■■■■■■■□')
+    time.sleep(0.1)
+    sys.stdout.write('\rLoading- ■■■■■■■■■■')
+  sys.stdout.write("\n\rDone!\n")
 elif y == 0:
 
     print('\n(Error) 0 will not work')
